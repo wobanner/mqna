@@ -4,7 +4,7 @@
   <base href="/mqna/">
   <meta charset="UTF-8" />
   <title>Dispatch Post</title>
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="/mqna/styles.css" />
 </head>
 <body>
   <header id="nav-placeholder"></header>
@@ -13,7 +13,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    fetch("../nav.html")
+    fetch("/mqna/nav.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("nav-placeholder").innerHTML = html;
@@ -23,7 +23,7 @@
     const post = params.get("post");
 
     if (post) {
-      fetch(`posts/${post}.md`)
+      fetch(`/mqna/dispatch/posts/${post}.md`)
         .then(res => res.text())
         .then(md => {
           document.getElementById("post-content").innerHTML = marked.parse(md);
