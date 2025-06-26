@@ -33,8 +33,8 @@ Then, play a fun game like Tetris for 3–4 minutes. Let it activate your patter
 **Anchoring Cues:**
 
 	• Lighting: Always begin with your soft desk lamp. This is your ritual signal.
-	• Sound: Use a consistent morning playlist (instrumental, lo-fi, ambient). This trains your brain to shift into quiet focus.
-	• Desk setup: Keep your journal and pen always in the same spot, ready for you. Maybe a small object – a stone, photo, or quote – sits nearby to ground you.
+	• Sound: Use a consistent morning playlist (instrumental, lo-fi, ambient).
+	• Desk setup: Keep your journal and pen always in the same spot, ready for you.
 
 **Reset Phrase:**
 
