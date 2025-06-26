@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/mqna/">
+  <meta charset="UTF-8" />
+  <title>Rituals Post</title>
+  <link rel="stylesheet" href="/mqna/styles.css" />
+</head>
+<body>
+  <header id="nav-placeholder"></header>
+  <main id="post-content"></main>
+  <footer>© MQNA</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch("/mqna/nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("nav-placeholder").innerHTML = html;
+      });
+
+    const params = new URLSearchParams(window.location.search);
+    const post = params.get("post");
+
+    if (post) {
+      fetch(`/mqna/dispatch/posts/${post}.md`)
+        .then(res => res.text())
+        .then(md => {
+          document.getElementById("post-content").innerHTML = marked.parse(md);
+        })
+        .catch(() => {
+          document.getElementById("post-content").innerHTML = "<p>Post not found.</p>";
+        });
+    } else {
+      document.getElementById("post-content").innerHTML = "<p>No post selected.</p>";
+    }
+  </script>
+</body>
+</html>

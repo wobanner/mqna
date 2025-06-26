@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/mqna/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rituals</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="nav-placeholder"></header>
+    <main>
+      <h1>Rituals</h1>
+      <ul id="post-list"></ul>
+    </main>
+
+    <script>
+      // Load shared navbar
+      fetch("nav.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("nav-placeholder").innerHTML = html;
+        });
+
+      // Load post list
+      fetch("dispatch/posts/posts.json")
+        .then(res => res.json())
+        .then(posts => {
+          const ul = document.getElementById("post-list");
+          posts.forEach(post => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = `/mqna/dispatch/post-template.html?post=${post.id}`;
+            a.textContent = `${post.title} (${post.date})`;
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+        });
+    </script>
+  </body>
+</html>
