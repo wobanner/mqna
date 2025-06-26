@@ -23,7 +23,7 @@
     const post = params.get("post");
 
     if (post) {
-      fetch(`/mqna/dispatch/posts/${post}.md`)
+      fetch(`/mqna/rituals/posts/${post}.md`)
         .then(res => res.text())
         .then(md => {
           document.getElementById("post-content").innerHTML = marked.parse(md);
