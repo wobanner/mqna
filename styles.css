@@ -6,8 +6,8 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #111;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 18px;
+  line-height: 1.75;
 }
 
 header {
@@ -80,6 +80,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2rem;
+  display: inline-block;
   border-bottom: 2px solid #000;
   padding-bottom: 0.25em;
 }
