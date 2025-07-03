@@ -1,5 +1,5 @@
-# Wellness Ritual
-## ”The Slow Morning”
+# The Slow Morning
+## Wellness Ritual
 
 **Phase 1 – _Emberlight_ (10 minutes)**
 
