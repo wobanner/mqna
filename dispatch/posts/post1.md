@@ -1,4 +1,4 @@
-# Watches as Tools
+# Watches as tools
 *June 2025*
 
 If you want to understand the essence of mechanical watches, don’t think of them as jewelry. Think of them as tools.

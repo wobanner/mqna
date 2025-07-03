@@ -1,4 +1,4 @@
-# Bicycles as Tools
+# Bicycles as tools
 *June 2025*
 
 When people think of tools, they tend to imagine something that lives in a garage or a toolbox. But tools are just anything that amplifies human effort. The bicycle is one of the most effective tools we’ve ever made. It’s not just a way to get around—it’s a multiplier.
