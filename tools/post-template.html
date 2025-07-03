@@ -3,7 +3,7 @@
 <head>
   <base href="/mqna/">
   <meta charset="UTF-8" />
-  <title>Dispatch Post</title>
+  <title>Tools Post</title>
   <link rel="stylesheet" href="/mqna/styles.css" />
 </head>
 <body>
@@ -23,7 +23,7 @@
     const post = params.get("post");
 
     if (post) {
-      fetch(`/mqna/dispatch/posts/${post}.md`)
+      fetch(`/mqna/tools/posts/${post}.md`)
         .then(res => res.text())
         .then(md => {
           document.getElementById("post-content").innerHTML = marked.parse(md);

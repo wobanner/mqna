@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <base href="/mqna/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dispatch</title>
+    <title>Tools</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="nav-placeholder"></header>
     <main>
-      <h1>Dispatch</h1>
+      <h1>Tools</h1>
       <ul id="post-list"></ul>
     </main>
 
@@ -23,14 +23,14 @@
         });
 
       // Load post list
-      fetch("dispatch/posts/posts.json")
+      fetch("tools/posts/posts.json")
         .then(res => res.json())
         .then(posts => {
           const ul = document.getElementById("post-list");
           posts.forEach(post => {
             const li = document.createElement("li");
             const a = document.createElement("a");
-            a.href = `/mqna/dispatch/post-template.html?post=${post.id}`;
+            a.href = `/mqna/tools/post-template.html?post=${post.id}`;
             a.textContent = `${post.title} (${post.date})`;
             li.appendChild(a);
             ul.appendChild(li);
